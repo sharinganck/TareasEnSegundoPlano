@@ -7,7 +7,6 @@ public class MyQuickSort {
 
     private float[] array;
     private int length;
-//Init
 
     public void sort(float[] inputArr) {
 
@@ -58,19 +57,4 @@ public class MyQuickSort {
         array[i] = array[j];
         array[j] = temp;
     }
-
-   /* public static void main(String a[]){
-
-
-
-
-
-        MyQuickSort sorter = new MyQuickSort();
-        double[] input = {543,65,23,4,7,2,5,6,76,0,4,1,23,4,71,40,2,4};
-        sorter.sort(input);
-        for(double i:input){
-            System.out.print(i);
-            System.out.print(" ");
-        }
-    }*/
 }
