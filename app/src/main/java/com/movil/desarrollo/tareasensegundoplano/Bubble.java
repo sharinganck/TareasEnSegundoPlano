@@ -5,9 +5,9 @@ package adrianservin.ordenamiento;
  */
 public class Bubble {
 
-    private double []datos;
+    private float []datos;
 
-    public void sort(double []datos){
+    public void sort(float []datos){
         this.datos=datos;
         int left = 0;
         int right = datos.length-1;
@@ -26,7 +26,7 @@ public class Bubble {
     }
 
     public void swap(int left,int right){
-        double temp = datos[left];
+        float temp = datos[left];
         datos[left] = datos[right];
         datos[right] = temp;
     }
