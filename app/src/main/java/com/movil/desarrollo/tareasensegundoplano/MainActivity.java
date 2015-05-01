@@ -2,6 +2,7 @@ package com.movil.desarrollo.tareasensegundoplano;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -16,11 +17,10 @@ public class MainActivity extends ActionBarActivity {
 //QUIICKSORT
         MyQuickSort sorter = new MyQuickSort();//Se manda a llamar a la clase MyQuickSort
 
-        double[] input = {543,65,23,4,7,2,5,6,76,0,4,1,23,4,71,40,2,4}; //Se lleno el arreglo con numeros aleatorios
+        float[] input = {5.43f,65.53f,23.12f,4.4f,7.56f}; //Se lleno el arreglo con numeros aleatorios
         sorter.sort(input);
-        for(double i:input){
-            System.out.print(i);
-            System.out.print(" ");//Se imprime en consola el resultado
+        for(float i:input){
+            Log.d("Ejecucion", String.valueOf(i));
         }
         //TERMINA QUICKSORT
 

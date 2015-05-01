@@ -5,11 +5,11 @@ package com.movil.desarrollo.tareasensegundoplano;
  */
 public class MyQuickSort {
 
-    private double[] array;
+    private float[] array;
     private int length;
 //Init
 
-    public void sort(double[] inputArr) {
+    public void sort(float[] inputArr) {
 
         if (inputArr == null || inputArr.length == 0) {
             return;
@@ -24,7 +24,7 @@ public class MyQuickSort {
         int i = lowerIndex;
         int j = higherIndex;
         // calculate pivot number, I am taking pivot as middle index number
-        double pivot = array[lowerIndex+(higherIndex-lowerIndex)/2];
+        float pivot = array[lowerIndex+(higherIndex-lowerIndex)/2];
         // Divide into two arrays
         while (i <= j) {
             /**
@@ -54,7 +54,7 @@ public class MyQuickSort {
     }
 
     private void exchangeNumbers(int i, int j) {
-        double temp = array[i];
+        float temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
