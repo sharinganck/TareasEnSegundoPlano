@@ -12,6 +12,18 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//QUIICKSORT
+        MyQuickSort sorter = new MyQuickSort();//Se manda a llamar a la clase MyQuickSort
+
+        double[] input = {543,65,23,4,7,2,5,6,76,0,4,1,23,4,71,40,2,4}; //Se lleno el arreglo con numeros aleatorios
+        sorter.sort(input);
+        for(double i:input){
+            System.out.print(i);
+            System.out.print(" ");//Se imprime en consola el resultado
+        }
+        //TERMINA QUICKSORT
+
     }
 
 
