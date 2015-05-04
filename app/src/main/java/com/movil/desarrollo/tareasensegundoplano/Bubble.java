@@ -1,5 +1,7 @@
 package com.movil.desarrollo.tareasensegundoplano;
 
+import android.util.Log;
+
 /**
  * Created by adrian_servin on 28/04/15.
  */
@@ -11,6 +13,7 @@ public class Bubble {
         this.datos=datos;
         int left = 0;
         int right = datos.length-1;
+        Log.w("Dentro del metodo de ordenacion", "HELLOW");
         bubbleSort(left,right);
     }
 
@@ -29,6 +32,7 @@ public class Bubble {
         float temp = datos[left];
         datos[left] = datos[right];
         datos[right] = temp;
+
     }
 
 
