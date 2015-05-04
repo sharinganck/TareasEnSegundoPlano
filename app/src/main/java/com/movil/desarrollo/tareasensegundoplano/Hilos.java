@@ -8,11 +8,11 @@ import android.widget.Toast;
 /**
  * Created by Marcos on 5/3/2015.
  */
-public class Hilos extends ActionBarActivity {
-float [] edad = {45, 23, 11, 9};
+public class Hilos {
+
     Handler handle = new Handler();
         public  void miThread(){
-
+/*SE CREA UN HILO PARA PODER DETENRLO UNOS SEGUNDOS Y SABER IDENTIFICAR CUANDO EMPIEZA EL METODO DE ORDENACION*/
             Thread t = new Thread(){
                 public void run(){
                     try{
@@ -21,6 +21,7 @@ float [] edad = {45, 23, 11, 9};
                     }catch(InterruptedException e){
                         e.printStackTrace();
                     }
+                    /*SE LLAMA EL HILO DONDE ESTA DENTRO EL METODO DE ORDENACION */
                     handle.post(proceso);
                 }
             };
@@ -29,7 +30,6 @@ float [] edad = {45, 23, 11, 9};
 
  Runnable proceso = new Runnable(){
     public void run(){
-Bubble bu=new Bubble();
-        bu.sort(edad);
+/*AQUI SE INTRODUCE EL OBJETO DE LA CLASE DE ORDENACION Y SE LLAMAN SUS METODOS*/
     }
 };}
